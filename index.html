@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <style>
+        .contact-us {
+            background-color: rgb(231, 135, 197);
+            margin: 0px;
+            padding: 100px;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .myDiv {
+            height: 40%;
+            width: 70%;
+            background-color: rgba(185, 189, 190, 0.523);
+            margin: auto;
+            border: 4px;
+            padding: 1px;
+        }
+        
+        .heading {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(238, 233, 233);
+            margin: 0px;
+            border: 3px;
+            padding: 10px;
+        }
+        
+        .form {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            margin: 0px;
+            border: 3px;
+            padding: 40px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        input,
+        textarea {
+            text-align: auto;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            background-color: rgb(238, 233, 233);
+        }
+        
+        input[type=submit] {
+            background-color: #355f6998;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #f97d7d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-us">
+
+        <div class="myDiv">
+            <div class="heading">
+                <h3>CONTACT FORM</h3>
+                <h1>
+                    Get In Touch
+                </h1>
+            </div>
+
+            <div class="form">
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Name*" name="Name" required on invalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
+
+                    <label for="Contact No">Contact No</label>
+                    <input type="tel" placeholder="Phone*" name="phone" required on invalid="this.setCustomValidity('Please enter your phone')" oninput="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}">
+
+                    <label for="email">Email Id</label>
+                    <input type="email" placeholder="Email*" name="Email" required on invalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
+
+                    <label for="message">Message</label>
+                    <textarea placeholder="Message*" name="Message" required on invalid="this.setCustomValidity('Please enter your message')" oninput="this.setCustomValidity('')"></textarea>
+
+                    <input type="submit" value="Submit" style="width:100%">
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
